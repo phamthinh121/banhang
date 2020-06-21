@@ -8,7 +8,6 @@ const Task = require('../models/task')
 
 
 router.get('/', forwardAuthenticated, async (req, res) => {
-  console.log('get task')
   const tasks = await Task.find({})
   res.render('welcome',{tasks: tasks})
 });
