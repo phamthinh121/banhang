@@ -1,7 +1,7 @@
 const express = require('express')
 const Task = require('../models/task')
 const multer = require('multer');
-const sharp = require('sharp');
+const sharp = require('sharp');``
 const session = require('express-session');
 const router = new express.Router();
 const User = require('../models/User')

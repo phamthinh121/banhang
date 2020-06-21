@@ -3,7 +3,7 @@ const router = express.Router();
 const auth = require('../middleware/auth');
 const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 const isLoggedIn = require('../middleware/logged');
-const Task = require('../models/task')
+const Task = require('../models/Task')
 
 
 
