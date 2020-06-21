@@ -59,9 +59,12 @@ app.use(
 
   })
 //routes
-app.use('/',require('./routes/index'));
-app.use('/users',require('./routes/users'));
-app.use('/',require('./routes/tasks'));
+const indexRouter = require('./routes/index');
+const userRouter = require('./routes/users')
+const taskRouter = require('./routes/tasks')
+app.use('/', indexRouter);
+app.use('/users', userRouter);
+app.use('/', taskRouter);
 
 
 
