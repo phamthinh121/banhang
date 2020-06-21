@@ -86,6 +86,7 @@ router.post('/create-product',upload.single('anhsp'),isLoggedIn, async (req, res
             // console.log(req.file)
         }
         await task.save()
+        // res.status(201).json(task);
         // console.log(task)
         res.redirect('/users/my-product')
     } catch(e) {
